@@ -38,7 +38,7 @@ app.use(session({
   key: settings.db, //cookie name?
   cookie: {maxAge: 1000 * 60 * 60 * 24 * 30}, //30 days
   store: new MongoStore({
-    url: 'mongodb://localhost'}),
+    url: 'mongodb://test:test@ds115124.mlab.com:15124/igentle11'}),
   resave: true,
   saveUninitialized: true  
 }));

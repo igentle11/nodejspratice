@@ -56,7 +56,6 @@ module.exports = function(app){
               req.flash('success', '註冊成功!');
               console.log("create user: " + newUser.name);
               req.session.user = user;
-              req.flash('success','登陸成功!');
               res.redirect('/');
           });
       });
